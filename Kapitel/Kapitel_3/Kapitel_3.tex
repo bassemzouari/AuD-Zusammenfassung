@@ -344,8 +344,8 @@ Methoden für zyklisches Array:\\
         IF Q.rear==Q.front AND !Q.isEmpty
         THEN error "overflow";
         ELSE
-            Q.A[Q.rear]=k;
             Q.rear=Q.rear+1 mod MAX;
+            Q.A[Q.rear]=k;
             Q.empty=false;
     \end{codeBlock}
     %\end{noindent}
