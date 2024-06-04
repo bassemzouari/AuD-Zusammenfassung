@@ -761,7 +761,7 @@ Code:\index{transplant}
 \end{codeBlock}
 \begin{codeBlock}[autogobble]{title={delete(T,z)}}
     IF z.left == nil THEN
-        transplant(T,z,z.left)
+        transplant(T,z,z.right)
     ELSE
         IF z.right == nil THEN
             transplant(T,z,z.left)
